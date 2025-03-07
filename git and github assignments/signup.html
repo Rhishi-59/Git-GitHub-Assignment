@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+         body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: aliceblue;
+            border-radius: 10px;
+            height: auto;
+            width: 400px;
+            padding: 20px;
+        }
+
+        .sub-container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .name, .batch, .age, .email, .pwd {
+            margin: 10px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+        }
+
+        input, select {
+            padding: 10px;
+            border: 1px solid #c1c0c0;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <div class="sub-container">
+            <form action="">
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="batch">
+                    <label for="batch">Batch:</label>
+                    <select name="batch" id="">
+                        <option value="sigma1">Sigma 1.0</option>
+                        <option value="sigma2">Sigma 2.0</option>
+                        <option value="datascience">Data Science</option>
+                        <option value="angular">Angular</option>
+                    </select>
+                </div>
+                <div class="age">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="">
+                </div>
+                <div class="email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="">
+                </div>
+                <div class="pwd">
+                    <label for="pwd">Password:</label>
+                    <input type="password" name="pwd" id="">
+                </div>
+                <div class="btn">Signup</div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
